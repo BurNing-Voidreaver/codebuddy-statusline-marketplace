@@ -165,7 +165,7 @@ def main():
 
     line = (f"{prefix}\n"
             f"\u2191{fmt_tokens(direct)} \u2193{fmt_tokens(cur_out)} "
-            f"R{fmt_tokens(cur_cr)} CH{ch:.1f}%\n"
+            f"R{fmt_tokens(cur_cr)} CH{ch:.1f}%   "
             f"{ctx_pct:.1f}%/{fmt_tokens(cw_size)} ({mode})")
     sys.stdout.write(line)
 

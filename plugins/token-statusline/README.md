@@ -4,8 +4,7 @@
 
 ```
 ~/project (branch)
-↑81k ↓25k R2.4M CH97.0%
-7.8%/1.0M (auto)
+↑81k ↓25k R2.4M CH97.0%   7.8%/1.0M (auto)
 ```
 
 字段含义：

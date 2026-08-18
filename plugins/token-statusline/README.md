@@ -3,7 +3,9 @@
 一个 CodeBuddy Code 状态栏（statusline）插件：在**输入栏底部常驻**显示 token 用量、上下文窗口占用、权限模式与工作目录，格式类似：
 
 ```
-~/project (branch) ↑81k ↓25k R2.4M CH97.0% 7.8%/1.0M (auto)
+~/project (branch)
+↑81k ↓25k R2.4M CH97.0%
+7.8%/1.0M (auto)
 ```
 
 字段含义：

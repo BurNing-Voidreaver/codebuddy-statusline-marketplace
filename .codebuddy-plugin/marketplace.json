@@ -1,0 +1,16 @@
+{
+  "name": "token-statusline-marketplace",
+  "owner": {
+    "name": "BurNing-Voidreaver"
+  },
+  "description": "CodeBuddy Code 状态栏插件：在输入栏底部常驻显示 token 用量、上下文窗口、权限模式与工作目录",
+  "plugins": [
+    {
+      "name": "token-statusline",
+      "source": "./plugins/token-statusline",
+      "description": "在输入栏底部常驻显示 token 用量、上下文窗口、权限模式与工作目录",
+      "version": "1.0.0",
+      "keywords": ["statusline", "tokens", "status", "context"]
+    }
+  ]
+}

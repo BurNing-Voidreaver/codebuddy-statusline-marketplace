@@ -1,0 +1,7 @@
+{
+  "name": "token-statusline",
+  "version": "1.0.0",
+  "description": "在输入栏底部常驻显示 token 用量、上下文窗口、权限模式与工作目录",
+  "keywords": ["statusline", "tokens", "status", "context"],
+  "commands": "./commands/"
+}

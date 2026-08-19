@@ -144,7 +144,10 @@ def main():
     # (fresh tokens / window size) only if the payload omits it.
     if used_pct is None:
         used_pct = (direct / cw_size * 100) if cw_size > 0 else 0.0
-    ctx_pct = used_pct
+    # A window-usage percentage over 100% is impossible; clamp so the status
+    # bar never shows a nonsensical value (e.g. a transient overflow state
+    # where the payload reports used_percentage > 100).
+    ctx_pct = max(0.0, min(100.0, float(used_pct)))
 
     # Working directory (home shortened to ~) + current git branch
     cwd = (payload.get("workspace") or {}).get("current_dir") or ""

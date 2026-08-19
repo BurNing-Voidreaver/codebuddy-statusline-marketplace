@@ -42,7 +42,9 @@ def fmt_tokens(n):
         return f"{n / 1_000_000:.1f}M"
     if n >= 1_000:
         return f"{n / 1_000:.0f}k"
-    return str(n)
+    # Sub-1000 values still carry a unit so the field never looks unit-less
+    # (e.g. 946 -> 0.9k, 0 -> 0.0k); output tokens are often < 1000.
+    return f"{n / 1_000:.1f}k"
 
 
 def extract_usage(entry):
